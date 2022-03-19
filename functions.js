@@ -36,3 +36,13 @@ console.log('running returners:', returner());
 // we can make returner(); a comment, ill do that now.
 //In the console, now we only see one in returner: and the running returners: true.
 //works, end.
+
+function lightCandle( dark , onComputer , candleAvailable ){
+    if (dark === true || onComputer === true && candleAvailable === true){
+        return 'yay I get to light a candle';
+    }
+    else{
+        return 'i am sad, no candle time :('
+    }
+}
+console.log(lightCandle(true , true , true));
